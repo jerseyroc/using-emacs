@@ -1,4 +1,61 @@
 #+STARTUP: showall hidestars
+#+TITLE: Using Emacs Configuration Files
 
-For a list of all posts and videos check out http://cestlaz.github.io/stories/emacs
+* About
+This repository contains Emacs configuration files that accompany the "Using Emacs" video series. For a list of all posts and videos, check out http://cestlaz.github.io/stories/emacs
+
+* Download / 下载
+
+** Option 1: Clone the Repository (Recommended)
+Clone this repository to get all the configuration files:
+#+BEGIN_SRC sh
+git clone https://github.com/jerseyroc/using-emacs.git
+#+END_SRC
+
+** Option 2: Download Individual Files
+You can download individual files directly from GitHub:
+- [[https://raw.githubusercontent.com/jerseyroc/using-emacs/master/init.el][init.el]] - Main initialization file
+- [[https://raw.githubusercontent.com/jerseyroc/using-emacs/master/myinit.org][myinit.org]] - Org-mode configuration file
+- [[https://raw.githubusercontent.com/jerseyroc/using-emacs/master/mu4econfig-sample.el][mu4econfig-sample.el]] - Sample email configuration
+
+** Option 3: Download ZIP Archive
+Download the entire repository as a ZIP file: [[https://github.com/jerseyroc/using-emacs/archive/master.zip][Download ZIP]]
+
+* Installation / 安装
+
+** Prerequisites
+- Emacs 24.4 or higher
+- Internet connection (for downloading packages)
+
+** Setup Instructions
+1. Backup your existing Emacs configuration (if any):
+#+BEGIN_SRC sh
+mv ~/.emacs.d ~/.emacs.d.backup
+#+END_SRC
+
+2. Create a new .emacs.d directory:
+#+BEGIN_SRC sh
+mkdir ~/.emacs.d
+#+END_SRC
+
+3. Copy the configuration files:
+#+BEGIN_SRC sh
+cp init.el ~/.emacs.d/
+cp myinit.org ~/.emacs.d/
+#+END_SRC
+
+4. Start Emacs. The first time you run it, Emacs will automatically install all required packages.
+
+* Usage / 使用
+
+After installation, start Emacs normally. The configuration will:
+- Set up MELPA package repositories
+- Install and configure various useful packages
+- Load the main configuration from myinit.org
+
+You can customize the configuration by editing =~/.emacs.d/myinit.org=
+
+* Resources / 资源
+- Video tutorials: http://cestlaz.github.io/stories/emacs
+- Emacs official site: https://www.gnu.org/software/emacs/
 
